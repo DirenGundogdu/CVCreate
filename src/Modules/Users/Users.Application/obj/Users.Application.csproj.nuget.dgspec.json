@@ -1,0 +1,207 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/diren/RiderProjects/CVCreate/src/Modules/Users/Users.Application/Users.Application.csproj": {}
+  },
+  "projects": {
+    "/Users/diren/RiderProjects/CVCreate/src/Modules/Users/Users.Application/Users.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/diren/RiderProjects/CVCreate/src/Modules/Users/Users.Application/Users.Application.csproj",
+        "projectName": "Users.Application",
+        "projectPath": "/Users/diren/RiderProjects/CVCreate/src/Modules/Users/Users.Application/Users.Application.csproj",
+        "packagesPath": "/Users/diren/.nuget/packages/",
+        "outputPath": "/Users/diren/RiderProjects/CVCreate/src/Modules/Users/Users.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/diren/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/diren/RiderProjects/CVCreate/src/Modules/Users/Users.Domain/Users.Domain.csproj": {
+                "projectPath": "/Users/diren/RiderProjects/CVCreate/src/Modules/Users/Users.Domain/Users.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/Users/diren/.dotnet/sdk/9.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/diren/RiderProjects/CVCreate/src/Modules/Users/Users.Domain/Users.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/diren/RiderProjects/CVCreate/src/Modules/Users/Users.Domain/Users.Domain.csproj",
+        "projectName": "Users.Domain",
+        "projectPath": "/Users/diren/RiderProjects/CVCreate/src/Modules/Users/Users.Domain/Users.Domain.csproj",
+        "packagesPath": "/Users/diren/.nuget/packages/",
+        "outputPath": "/Users/diren/RiderProjects/CVCreate/src/Modules/Users/Users.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/diren/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/diren/RiderProjects/CVCreate/src/Shared/Shared/Shared.csproj": {
+                "projectPath": "/Users/diren/RiderProjects/CVCreate/src/Shared/Shared/Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/Users/diren/.dotnet/sdk/9.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/diren/RiderProjects/CVCreate/src/Shared/Shared/Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/diren/RiderProjects/CVCreate/src/Shared/Shared/Shared.csproj",
+        "projectName": "Shared",
+        "projectPath": "/Users/diren/RiderProjects/CVCreate/src/Shared/Shared/Shared.csproj",
+        "packagesPath": "/Users/diren/.nuget/packages/",
+        "outputPath": "/Users/diren/RiderProjects/CVCreate/src/Shared/Shared/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/diren/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[14.0.0, )"
+            },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.3.1, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/Users/diren/.dotnet/sdk/9.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
