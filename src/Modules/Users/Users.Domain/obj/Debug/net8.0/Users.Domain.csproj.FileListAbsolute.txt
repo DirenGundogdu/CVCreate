@@ -1,0 +1,16 @@
+/Users/diren/RiderProjects/CVCreate/src/Modules/Users/Users.Domain/bin/Debug/net8.0/Users.Domain.deps.json
+/Users/diren/RiderProjects/CVCreate/src/Modules/Users/Users.Domain/bin/Debug/net8.0/Users.Domain.dll
+/Users/diren/RiderProjects/CVCreate/src/Modules/Users/Users.Domain/bin/Debug/net8.0/Users.Domain.pdb
+/Users/diren/RiderProjects/CVCreate/src/Modules/Users/Users.Domain/bin/Debug/net8.0/Shared.dll
+/Users/diren/RiderProjects/CVCreate/src/Modules/Users/Users.Domain/bin/Debug/net8.0/Shared.pdb
+/Users/diren/RiderProjects/CVCreate/src/Modules/Users/Users.Domain/obj/Debug/net8.0/Users.Domain.csproj.AssemblyReference.cache
+/Users/diren/RiderProjects/CVCreate/src/Modules/Users/Users.Domain/obj/Debug/net8.0/Users.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/diren/RiderProjects/CVCreate/src/Modules/Users/Users.Domain/obj/Debug/net8.0/Users.Domain.AssemblyInfoInputs.cache
+/Users/diren/RiderProjects/CVCreate/src/Modules/Users/Users.Domain/obj/Debug/net8.0/Users.Domain.AssemblyInfo.cs
+/Users/diren/RiderProjects/CVCreate/src/Modules/Users/Users.Domain/obj/Debug/net8.0/Users.Domain.csproj.CoreCompileInputs.cache
+/Users/diren/RiderProjects/CVCreate/src/Modules/Users/Users.Domain/obj/Debug/net8.0/Users.Domain.sourcelink.json
+/Users/diren/RiderProjects/CVCreate/src/Modules/Users/Users.Domain/obj/Debug/net8.0/Users.Do.BCCBE71F.Up2Date
+/Users/diren/RiderProjects/CVCreate/src/Modules/Users/Users.Domain/obj/Debug/net8.0/Users.Domain.dll
+/Users/diren/RiderProjects/CVCreate/src/Modules/Users/Users.Domain/obj/Debug/net8.0/refint/Users.Domain.dll
+/Users/diren/RiderProjects/CVCreate/src/Modules/Users/Users.Domain/obj/Debug/net8.0/Users.Domain.pdb
+/Users/diren/RiderProjects/CVCreate/src/Modules/Users/Users.Domain/obj/Debug/net8.0/ref/Users.Domain.dll
