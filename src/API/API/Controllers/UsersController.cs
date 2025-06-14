@@ -1,6 +1,7 @@
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Users.Application.Commands.CreateUser;
+using Users.Application.Commands.DeleteUser;
 using Users.Application.Commands.LoginUser;
 using Users.Application.Commands.UpdateUser;
 
@@ -47,6 +48,14 @@ public class UsersController : ControllerBase
   {
    return Ok(new { Success = true, Message = "User updated successfully." });
   }
+ }
+
+ [HttpDelete("{id:guid}")]
+ public async Task<IActionResult> DeleteUser(Guid id) {
+  var result = await _mediator.Send(new DeleteUserCommand(id));
+  if (!result) return NotFound("User not found.");
+
+  return NoContent();
  }
  
 }
