@@ -1,6 +1,7 @@
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Users.Application.Commands.CreateUser;
+using Users.Application.Commands.LoginUser;
 
 namespace API.Controllers;
 
@@ -14,16 +15,24 @@ public class UsersController : ControllerBase
   _mediator = mediator;
  }
 
- [HttpPost]
+ [HttpPost("create")]
  public async Task<IActionResult> CreateUser([FromBody] CreateUserCommand command) {
   var userId = await _mediator.Send(command);
-  return CreatedAtAction(nameof(GetById), new { id = userId }, userId);
+  if (userId != Guid.Empty) 
+  {
+   return Ok(new { Success = true, UserId = userId });
+  }
+  return BadRequest(new { Success = false, Message = "User creation failed." });
  }
  
- [HttpGet("{id}")]
- public async Task<IActionResult> GetById(Guid id)
- {
-  // Geçici
-  return Ok(new { Message = "Not implemented yet", Id = id });
+ [HttpPost("login")]
+ public async Task<IActionResult> LoginUser([FromBody] LoginUserQuery query) {
+  var response = await _mediator.Send(query);
+  if (response.Success)
+  {
+   return Ok(response);
+  }
+  return Unauthorized(response);
  }
+ 
 }

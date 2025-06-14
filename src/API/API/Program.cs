@@ -1,5 +1,7 @@
 
+using MediatR;
 using Users.Application;
+using Users.Application.Commands.LoginUser;
 using Users.Infrastructure;
 
 
@@ -9,6 +11,7 @@ builder.Services.AddControllers();
 
 builder.Services.AddApplication();
 builder.Services.AddInfrastructure(builder.Configuration);
+builder.Services.AddMediatR(typeof(LoginUserQueryHandler).Assembly);
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

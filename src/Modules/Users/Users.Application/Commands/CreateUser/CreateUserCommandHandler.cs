@@ -1,5 +1,4 @@
 using MediatR;
-using Microsoft.AspNetCore.Identity;
 using Shared.Exceptions;
 using Users.Application.Interfaces;
 using Users.Domain.Abstractions;
