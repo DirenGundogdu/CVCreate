@@ -26,6 +26,11 @@ public class UserRepository : IUserRepository
         await _context.SaveChangesAsync();
     }
 
+    public async Task UpdateAsync(User user) {
+         _context.Update(user);
+         await _context.SaveChangesAsync();
+    }
+
     public async Task DeleteAsync(User user) {
         if (user == null) {
             throw new ArgumentNullException(nameof(user));

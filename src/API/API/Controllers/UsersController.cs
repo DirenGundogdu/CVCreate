@@ -2,6 +2,7 @@ using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Users.Application.Commands.CreateUser;
 using Users.Application.Commands.LoginUser;
+using Users.Application.Commands.UpdateUser;
 
 namespace API.Controllers;
 
@@ -33,6 +34,19 @@ public class UsersController : ControllerBase
    return Ok(response);
   }
   return Unauthorized(response);
+ }
+
+ [HttpPut("update")]
+ public async Task<IActionResult> UpdateUser([FromBody] UpdateUserCommand command) {
+  var response = await _mediator.Send(command);
+  if (response == false) 
+  {
+  return BadRequest(new { Success = false, Message = "User update failed." });
+  }
+  else
+  {
+   return Ok(new { Success = true, Message = "User updated successfully." });
+  }
  }
  
 }

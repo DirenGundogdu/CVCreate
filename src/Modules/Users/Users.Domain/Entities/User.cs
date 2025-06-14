@@ -19,9 +19,9 @@ public class User : BaseEntity
         PasswordHash = passwordHash;
     }
     
-    public void ChangeName(string firstName, string lastName)
+    public void ChangeNameSurname(string firstName, string lastName)
     {
-        if (string.IsNullOrWhiteSpace(firstName) || string.IsNullOrWhiteSpace(lastName))
+        if (string.IsNullOrWhiteSpace(firstName) || string.IsNullOrWhiteSpace(lastName) )
             throw new ArgumentException("First name and last name cannot be empty.");
 
         FirstName = firstName;
