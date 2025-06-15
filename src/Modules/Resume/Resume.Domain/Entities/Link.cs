@@ -9,6 +9,14 @@ public class Link : ValueObject
     
     public string Url { get; private set; }
     public string Title { get; private set; }
+    
+    private Link() { }
+    public Link(Guid resumeId, string url, string title)
+    {
+        ResumeId = resumeId;
+        Url = url;
+        Title = title;
+    }
 
     protected override IEnumerable<object> GetEqualityComponents()
     {

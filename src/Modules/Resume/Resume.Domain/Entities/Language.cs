@@ -9,6 +9,14 @@ public class Language : ValueObject
     
     public string Name { get; private set; }
     public string Proficiency { get; private set; }
+    
+    private Language() { }
+    public Language(Guid resumeId, string name, string proficiency)
+    {
+        ResumeId = resumeId;
+        Name = name;
+        Proficiency = proficiency;
+    }
 
     protected override IEnumerable<object> GetEqualityComponents()
     {

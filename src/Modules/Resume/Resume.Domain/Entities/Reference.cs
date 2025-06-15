@@ -12,6 +12,16 @@ public class Reference : BaseEntity
     public string Company { get; private set; }
     public string? Email { get; private set; }
     public string? Phone { get; private set; }
-
     
+    private Reference() { }
+
+    public Reference(Guid resumeId,string fullName, string position, string company, string? email, string? phone)
+    {
+        ResumeId = resumeId;
+        FullName = fullName;
+        Position = position;
+        Company = company;
+        Email = email;
+        Phone = phone;
+    }
 }

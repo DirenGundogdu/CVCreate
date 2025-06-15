@@ -12,4 +12,22 @@ public class Education : BaseEntity
     public string FieldOfStudy { get; private set; }
     public DateTime StartDate { get; private set; }
     public DateTime? EndDate { get; private set; }
+    
+    private Education() { } 
+
+    public Education(
+        Guid resumeId,
+        string school,
+        string degree,
+        string fieldOfStudy,
+        DateTime startDate,
+        DateTime? endDate)
+    {
+        ResumeId = resumeId;
+        School = school;
+        Degree = degree;
+        FieldOfStudy = fieldOfStudy;
+        StartDate = startDate;
+        EndDate = endDate;
+    }
 }
