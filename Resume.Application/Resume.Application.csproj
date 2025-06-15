@@ -11,8 +11,4 @@
       <ProjectReference Include="..\src\Shared\Shared\Shared.csproj" />
     </ItemGroup>
 
-    <ItemGroup>
-      <Folder Include="Queries\" />
-    </ItemGroup>
-
 </Project>
