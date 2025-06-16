@@ -64,10 +64,40 @@ public class Resume : BaseEntity
             Links.AddRange(links);
     }
 
-    public void Update(string title, string summary)
+    public void UpdateBasicInfo(string title, string summary)
     {
         Title = title;
         Summary = summary;
         UpdatedAt = DateTime.UtcNow;
+    }
+
+    public void ReplaceExperiences(List<Experience> experiences)
+    {
+        Experiences = experiences;
+    }
+
+    public void ReplaceEducations(List<Education> educations)
+    {
+        Educations = educations;
+    }
+
+    public void ReplaceSkills(List<Skill> skills)
+    {
+        Skills = skills;
+    }
+
+    public void ReplaceLanguages(List<Language> languages)
+    {
+        Languages = languages;
+    }
+
+    public void ReplaceReferences(List<Reference> references)
+    {
+        References = references;
+    }
+
+    public void ReplaceLinks(List<Link> links)
+    {
+        Links = links;
     }
 }

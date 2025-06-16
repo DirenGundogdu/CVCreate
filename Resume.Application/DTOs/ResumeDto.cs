@@ -2,6 +2,7 @@ namespace Resume.Application.DTOs;
 
 public record ResumeDto(
  Guid Id,
+ Guid UserId,
  string Title,
  string Summary,
  List<ExperienceDto> Experiences,
