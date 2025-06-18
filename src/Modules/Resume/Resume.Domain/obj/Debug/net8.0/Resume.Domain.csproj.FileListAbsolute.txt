@@ -1,0 +1,16 @@
+/Users/diren/RiderProjects/CVCreate/src/Modules/Resume/Resume.Domain/bin/Debug/net8.0/Resume.Domain.deps.json
+/Users/diren/RiderProjects/CVCreate/src/Modules/Resume/Resume.Domain/bin/Debug/net8.0/Resume.Domain.dll
+/Users/diren/RiderProjects/CVCreate/src/Modules/Resume/Resume.Domain/bin/Debug/net8.0/Resume.Domain.pdb
+/Users/diren/RiderProjects/CVCreate/src/Modules/Resume/Resume.Domain/bin/Debug/net8.0/Shared.dll
+/Users/diren/RiderProjects/CVCreate/src/Modules/Resume/Resume.Domain/bin/Debug/net8.0/Shared.pdb
+/Users/diren/RiderProjects/CVCreate/src/Modules/Resume/Resume.Domain/obj/Debug/net8.0/Resume.Domain.csproj.AssemblyReference.cache
+/Users/diren/RiderProjects/CVCreate/src/Modules/Resume/Resume.Domain/obj/Debug/net8.0/Resume.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/diren/RiderProjects/CVCreate/src/Modules/Resume/Resume.Domain/obj/Debug/net8.0/Resume.Domain.AssemblyInfoInputs.cache
+/Users/diren/RiderProjects/CVCreate/src/Modules/Resume/Resume.Domain/obj/Debug/net8.0/Resume.Domain.AssemblyInfo.cs
+/Users/diren/RiderProjects/CVCreate/src/Modules/Resume/Resume.Domain/obj/Debug/net8.0/Resume.Domain.csproj.CoreCompileInputs.cache
+/Users/diren/RiderProjects/CVCreate/src/Modules/Resume/Resume.Domain/obj/Debug/net8.0/Resume.Domain.sourcelink.json
+/Users/diren/RiderProjects/CVCreate/src/Modules/Resume/Resume.Domain/obj/Debug/net8.0/Resume.D.1736A737.Up2Date
+/Users/diren/RiderProjects/CVCreate/src/Modules/Resume/Resume.Domain/obj/Debug/net8.0/Resume.Domain.dll
+/Users/diren/RiderProjects/CVCreate/src/Modules/Resume/Resume.Domain/obj/Debug/net8.0/refint/Resume.Domain.dll
+/Users/diren/RiderProjects/CVCreate/src/Modules/Resume/Resume.Domain/obj/Debug/net8.0/Resume.Domain.pdb
+/Users/diren/RiderProjects/CVCreate/src/Modules/Resume/Resume.Domain/obj/Debug/net8.0/ref/Resume.Domain.dll

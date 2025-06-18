@@ -1709,6 +1709,49 @@
           }
         }
       },
+      "Resume.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Resume.Domain": "1.0.0",
+          "Shared": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Resume.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Resume.Application.dll": {}
+        }
+      },
+      "Resume.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Shared": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Resume.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Resume.Domain.dll": {}
+        }
+      },
+      "Resume.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "8.0.14",
+          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.14",
+          "Resume.Application": "1.0.0",
+          "Shared": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Resume.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Resume.Infrastructure.dll": {}
+        }
+      },
       "Shared/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -4751,6 +4794,21 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "Resume.Application/1.0.0": {
+      "type": "project",
+      "path": "../../../Resume.Application/Resume.Application.csproj",
+      "msbuildProject": "../../../Resume.Application/Resume.Application.csproj"
+    },
+    "Resume.Domain/1.0.0": {
+      "type": "project",
+      "path": "../../Modules/Resume/Resume.Domain/Resume.Domain.csproj",
+      "msbuildProject": "../../Modules/Resume/Resume.Domain/Resume.Domain.csproj"
+    },
+    "Resume.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../../Modules/Resume/Resume.Infrastructure/Resume.Infrastructure.csproj",
+      "msbuildProject": "../../Modules/Resume/Resume.Infrastructure/Resume.Infrastructure.csproj"
+    },
     "Shared/1.0.0": {
       "type": "project",
       "path": "../../Shared/Shared/Shared.csproj",
@@ -4776,6 +4834,7 @@
     "net8.0": [
       "Microsoft.AspNetCore.OpenApi >= 8.0.11",
       "Microsoft.EntityFrameworkCore.Tools >= 8.0.14",
+      "Resume.Infrastructure >= 1.0.0",
       "Shared >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.6.2",
       "Users.Application >= 1.0.0",
@@ -4807,6 +4866,9 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
+            "/Users/diren/RiderProjects/CVCreate/src/Modules/Resume/Resume.Infrastructure/Resume.Infrastructure.csproj": {
+              "projectPath": "/Users/diren/RiderProjects/CVCreate/src/Modules/Resume/Resume.Infrastructure/Resume.Infrastructure.csproj"
+            },
             "/Users/diren/RiderProjects/CVCreate/src/Modules/Users/Users.Application/Users.Application.csproj": {
               "projectPath": "/Users/diren/RiderProjects/CVCreate/src/Modules/Users/Users.Application/Users.Application.csproj"
             },
@@ -4827,9 +4889,8 @@
       "restoreAuditProperties": {
         "enableAudit": "true",
         "auditLevel": "low",
-        "auditMode": "all"
-      },
-      "SdkAnalysisLevel": "9.0.100"
+        "auditMode": "direct"
+      }
     },
     "frameworks": {
       "net8.0": {
@@ -4869,7 +4930,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/Users/diren/.dotnet/sdk/9.0.100/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.204/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

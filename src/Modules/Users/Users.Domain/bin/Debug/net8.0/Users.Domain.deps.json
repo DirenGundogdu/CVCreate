@@ -104,10 +104,7 @@
           "MediatR.Extensions.Microsoft.DependencyInjection": "11.1.0"
         },
         "runtime": {
-          "Shared.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "Shared.dll": {}
         }
       }
     }

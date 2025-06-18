@@ -1,5 +1,6 @@
 
 using MediatR;
+using Resume.Infrastructure;
 using Users.Application;
 using Users.Application.Commands.LoginUser;
 using Users.Infrastructure;
@@ -10,7 +11,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 
 builder.Services.AddApplication();
-builder.Services.AddInfrastructure(builder.Configuration);
+builder.Services.AddInfrastructureUser(builder.Configuration);
+builder.Services.AddInfrastructureResume(builder.Configuration);
 builder.Services.AddMediatR(typeof(LoginUserQueryHandler).Assembly);
 
 builder.Services.AddEndpointsApiExplorer();

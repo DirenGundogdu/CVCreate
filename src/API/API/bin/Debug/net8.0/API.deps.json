@@ -10,6 +10,7 @@
         "dependencies": {
           "Microsoft.AspNetCore.OpenApi": "8.0.11",
           "Microsoft.EntityFrameworkCore.Tools": "8.0.14",
+          "Resume.Infrastructure": "1.0.0",
           "Shared": "1.0.0",
           "Swashbuckle.AspNetCore": "6.6.2",
           "Users.Application": "1.0.0",
@@ -1040,6 +1041,34 @@
           }
         }
       },
+      "Resume.Application/1.0.0": {
+        "dependencies": {
+          "Resume.Domain": "1.0.0",
+          "Shared": "1.0.0"
+        },
+        "runtime": {
+          "Resume.Application.dll": {}
+        }
+      },
+      "Resume.Domain/1.0.0": {
+        "dependencies": {
+          "Shared": "1.0.0"
+        },
+        "runtime": {
+          "Resume.Domain.dll": {}
+        }
+      },
+      "Resume.Infrastructure/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "8.0.14",
+          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.14",
+          "Resume.Application": "1.0.0",
+          "Shared": "1.0.0"
+        },
+        "runtime": {
+          "Resume.Infrastructure.dll": {}
+        }
+      },
       "Shared/1.0.0": {
         "dependencies": {
           "AutoMapper": "14.0.0",
@@ -1048,10 +1077,7 @@
           "MediatR.Extensions.Microsoft.DependencyInjection": "11.1.0"
         },
         "runtime": {
-          "Shared.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "Shared.dll": {}
         }
       },
       "Users.Application/1.0.0": {
@@ -1059,10 +1085,7 @@
           "Users.Domain": "1.0.0"
         },
         "runtime": {
-          "Users.Application.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "Users.Application.dll": {}
         }
       },
       "Users.Domain/1.0.0": {
@@ -1070,10 +1093,7 @@
           "Shared": "1.0.0"
         },
         "runtime": {
-          "Users.Domain.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "Users.Domain.dll": {}
         }
       },
       "Users.Infrastructure/1.0.0": {
@@ -1084,10 +1104,7 @@
           "Users.Application": "1.0.0"
         },
         "runtime": {
-          "Users.Infrastructure.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "Users.Infrastructure.dll": {}
         }
       }
     }
@@ -1727,6 +1744,21 @@
       "sha512": "sha512-IXoJOXIqc39AIe+CIR7koBtRGMiCt/LPM3lI+PELtDIy9XdyeSrwXFdWV9dzJ2Awl0paLWUaknLxFQ5HpHZUog==",
       "path": "system.windows.extensions/6.0.0",
       "hashPath": "system.windows.extensions.6.0.0.nupkg.sha512"
+    },
+    "Resume.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Resume.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Resume.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "Shared/1.0.0": {
       "type": "project",
