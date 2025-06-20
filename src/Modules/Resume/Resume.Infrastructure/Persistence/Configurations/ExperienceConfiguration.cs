@@ -22,7 +22,5 @@ public class ExperienceConfiguration : IEntityTypeConfiguration<Experience>
         builder.Property(x => x.StartDate).IsRequired();
 
         builder.Property(x => x.EndDate);
-
-        builder.HasOne(x => x.Resume).WithMany(x => x.Experiences).HasForeignKey(x => x.ResumeId).OnDelete(DeleteBehavior.Cascade);
     }
 }

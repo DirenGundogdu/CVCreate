@@ -1047,7 +1047,10 @@
           "Shared": "1.0.0"
         },
         "runtime": {
-          "Resume.Application.dll": {}
+          "Resume.Application.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "Resume.Domain/1.0.0": {
@@ -1055,7 +1058,10 @@
           "Shared": "1.0.0"
         },
         "runtime": {
-          "Resume.Domain.dll": {}
+          "Resume.Domain.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "Resume.Infrastructure/1.0.0": {
@@ -1066,7 +1072,10 @@
           "Shared": "1.0.0"
         },
         "runtime": {
-          "Resume.Infrastructure.dll": {}
+          "Resume.Infrastructure.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "Shared/1.0.0": {
@@ -1077,7 +1086,10 @@
           "MediatR.Extensions.Microsoft.DependencyInjection": "11.1.0"
         },
         "runtime": {
-          "Shared.dll": {}
+          "Shared.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "Users.Application/1.0.0": {
@@ -1085,7 +1097,10 @@
           "Users.Domain": "1.0.0"
         },
         "runtime": {
-          "Users.Application.dll": {}
+          "Users.Application.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "Users.Domain/1.0.0": {
@@ -1093,7 +1108,10 @@
           "Shared": "1.0.0"
         },
         "runtime": {
-          "Users.Domain.dll": {}
+          "Users.Domain.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "Users.Infrastructure/1.0.0": {
@@ -1104,7 +1122,10 @@
           "Users.Application": "1.0.0"
         },
         "runtime": {
-          "Users.Infrastructure.dll": {}
+          "Users.Infrastructure.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }

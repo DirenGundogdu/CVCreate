@@ -984,7 +984,10 @@
           "MediatR.Extensions.Microsoft.DependencyInjection": "11.1.0"
         },
         "runtime": {
-          "Shared.dll": {}
+          "Shared.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "Users.Application/1.0.0": {
@@ -992,7 +995,10 @@
           "Users.Domain": "1.0.0"
         },
         "runtime": {
-          "Users.Application.dll": {}
+          "Users.Application.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "Users.Domain/1.0.0": {
@@ -1000,7 +1006,10 @@
           "Shared": "1.0.0"
         },
         "runtime": {
-          "Users.Domain.dll": {}
+          "Users.Domain.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }

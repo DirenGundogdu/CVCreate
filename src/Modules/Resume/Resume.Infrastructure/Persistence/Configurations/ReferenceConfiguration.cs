@@ -22,7 +22,5 @@ public class ReferenceConfiguration : IEntityTypeConfiguration<Reference>
         builder.Property(x => x.Email).HasMaxLength(100);
 
         builder.Property(x => x.Phone).HasMaxLength(20);
-
-        builder.HasOne(x => x.Resume).WithMany(x => x.References).HasForeignKey(x => x.ResumeId).OnDelete(DeleteBehavior.Cascade);
     }
 }

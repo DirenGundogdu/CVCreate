@@ -21,15 +21,15 @@ public class ResumeConfiguration : IEntityTypeConfiguration<Domain.Entities.Resu
 
         builder.Property(x => x.UpdatedAt).IsRequired();
 
-        builder.HasMany(x => x.Experiences).WithOne(x => x.Resume).HasForeignKey(x => x.ResumeId).OnDelete(DeleteBehavior.Cascade);
+        builder.HasMany(x => x.Experiences).WithOne().HasForeignKey(x => x.ResumeId).OnDelete(DeleteBehavior.Cascade);
 
-        builder.HasMany(r => r.Educations).WithOne(x => x.Resume).HasForeignKey(x => x.ResumeId).OnDelete(DeleteBehavior.Cascade);
+        builder.HasMany(r => r.Educations).WithOne().HasForeignKey(x => x.ResumeId).OnDelete(DeleteBehavior.Cascade);
 
         builder.HasMany(x => x.Skills).WithOne().HasForeignKey("ResumeId").OnDelete(DeleteBehavior.Cascade);
 
         builder.HasMany(x => x.Languages).WithOne().HasForeignKey("ResumeId").OnDelete(DeleteBehavior.Cascade);
 
-        builder.HasMany(x => x.References).WithOne(x => x.Resume).HasForeignKey(x => x.ResumeId).OnDelete(DeleteBehavior.Cascade);
+        builder.HasMany(x => x.References).WithOne().HasForeignKey(x => x.ResumeId).OnDelete(DeleteBehavior.Cascade);
 
         builder.HasMany(x => x.Links).WithOne().HasForeignKey("ResumeId").OnDelete(DeleteBehavior.Cascade);
     }

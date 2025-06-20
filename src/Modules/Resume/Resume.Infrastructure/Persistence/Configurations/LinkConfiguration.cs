@@ -16,7 +16,5 @@ public class LinkConfiguration : IEntityTypeConfiguration<Link>
         builder.Property(x => x.Url).HasMaxLength(300).IsRequired();
 
         builder.Property(x => x.Title).HasMaxLength(150).IsRequired();
-
-        builder.HasOne(x => x.Resume).WithMany(x => x.Links).HasForeignKey(x => x.ResumeId).OnDelete(DeleteBehavior.Cascade);
     }
 }

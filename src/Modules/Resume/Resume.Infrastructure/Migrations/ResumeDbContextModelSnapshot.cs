@@ -115,12 +115,7 @@ namespace Resume.Infrastructure.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
-                    b.Property<Guid>("ResumeId1")
-                        .HasColumnType("uniqueidentifier");
-
                     b.HasKey("ResumeId", "Name", "Proficiency");
-
-                    b.HasIndex("ResumeId1");
 
                     b.ToTable("Languages", (string)null);
                 });
@@ -138,12 +133,7 @@ namespace Resume.Infrastructure.Migrations
                         .HasMaxLength(150)
                         .HasColumnType("nvarchar(150)");
 
-                    b.Property<Guid>("ResumeId1")
-                        .HasColumnType("uniqueidentifier");
-
                     b.HasKey("ResumeId", "Url", "Title");
-
-                    b.HasIndex("ResumeId1");
 
                     b.ToTable("Links", (string)null);
                 });
@@ -240,24 +230,20 @@ namespace Resume.Infrastructure.Migrations
 
             modelBuilder.Entity("Resume.Domain.Entities.Education", b =>
                 {
-                    b.HasOne("Resume.Domain.Entities.Resume", "Resume")
+                    b.HasOne("Resume.Domain.Entities.Resume", null)
                         .WithMany("Educations")
                         .HasForeignKey("ResumeId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.Navigation("Resume");
                 });
 
             modelBuilder.Entity("Resume.Domain.Entities.Experience", b =>
                 {
-                    b.HasOne("Resume.Domain.Entities.Resume", "Resume")
+                    b.HasOne("Resume.Domain.Entities.Resume", null)
                         .WithMany("Experiences")
                         .HasForeignKey("ResumeId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.Navigation("Resume");
                 });
 
             modelBuilder.Entity("Resume.Domain.Entities.Language", b =>
@@ -267,14 +253,6 @@ namespace Resume.Infrastructure.Migrations
                         .HasForeignKey("ResumeId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.HasOne("Resume.Domain.Entities.Resume", "Resume")
-                        .WithMany()
-                        .HasForeignKey("ResumeId1")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Resume");
                 });
 
             modelBuilder.Entity("Resume.Domain.Entities.Link", b =>
@@ -284,36 +262,24 @@ namespace Resume.Infrastructure.Migrations
                         .HasForeignKey("ResumeId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.HasOne("Resume.Domain.Entities.Resume", "Resume")
-                        .WithMany()
-                        .HasForeignKey("ResumeId1")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Resume");
                 });
 
             modelBuilder.Entity("Resume.Domain.Entities.Reference", b =>
                 {
-                    b.HasOne("Resume.Domain.Entities.Resume", "Resume")
+                    b.HasOne("Resume.Domain.Entities.Resume", null)
                         .WithMany("References")
                         .HasForeignKey("ResumeId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.Navigation("Resume");
                 });
 
             modelBuilder.Entity("Resume.Domain.Entities.Skill", b =>
                 {
-                    b.HasOne("Resume.Domain.Entities.Resume", "Resume")
+                    b.HasOne("Resume.Domain.Entities.Resume", null)
                         .WithMany("Skills")
                         .HasForeignKey("ResumeId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.Navigation("Resume");
                 });
 
             modelBuilder.Entity("Resume.Domain.Entities.Resume", b =>

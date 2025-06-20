@@ -22,7 +22,5 @@ public class EducationConfiguration : IEntityTypeConfiguration<Education>
         builder.Property(x => x.StartDate).IsRequired();
 
         builder.Property(x => x.EndDate);
-
-        builder.HasOne(x => x.Resume).WithMany(x => x.Educations).HasForeignKey(x => x.ResumeId).OnDelete(DeleteBehavior.Cascade);
     }
 }

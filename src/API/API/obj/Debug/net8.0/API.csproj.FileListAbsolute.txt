@@ -165,3 +165,6 @@
 /Users/diren/RiderProjects/CVCreate/src/API/API/bin/Debug/net8.0/Resume.Infrastructure.pdb
 /Users/diren/RiderProjects/CVCreate/src/API/API/bin/Debug/net8.0/Resume.Application.pdb
 /Users/diren/RiderProjects/CVCreate/src/API/API/bin/Debug/net8.0/Resume.Domain.pdb
+/Users/diren/RiderProjects/CVCreate/src/API/API/bin/Debug/net8.0/API.staticwebassets.endpoints.json
+/Users/diren/RiderProjects/CVCreate/src/API/API/obj/Debug/net8.0/staticwebassets.build.endpoints.json
+/Users/diren/RiderProjects/CVCreate/src/API/API/obj/Debug/net8.0/staticwebassets/msbuild.API.Microsoft.AspNetCore.StaticWebAssetEndpoints.props

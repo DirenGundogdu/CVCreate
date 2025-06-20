@@ -982,7 +982,10 @@
           "Shared": "1.0.0"
         },
         "runtime": {
-          "Resume.Application.dll": {}
+          "Resume.Application.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "Resume.Domain/1.0.0": {
@@ -990,7 +993,10 @@
           "Shared": "1.0.0"
         },
         "runtime": {
-          "Resume.Domain.dll": {}
+          "Resume.Domain.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "Shared/1.0.0": {
@@ -1001,7 +1007,10 @@
           "MediatR.Extensions.Microsoft.DependencyInjection": "11.1.0"
         },
         "runtime": {
-          "Shared.dll": {}
+          "Shared.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }

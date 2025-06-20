@@ -81,8 +81,7 @@ namespace Resume.Infrastructure.Migrations
                 {
                     ResumeId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     Name = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
-                    Proficiency = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
-                    ResumeId1 = table.Column<Guid>(type: "uniqueidentifier", nullable: false)
+                    Proficiency = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false)
                 },
                 constraints: table =>
                 {
@@ -90,12 +89,6 @@ namespace Resume.Infrastructure.Migrations
                     table.ForeignKey(
                         name: "FK_Languages_Resumes_ResumeId",
                         column: x => x.ResumeId,
-                        principalTable: "Resumes",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_Languages_Resumes_ResumeId1",
-                        column: x => x.ResumeId1,
                         principalTable: "Resumes",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
@@ -107,8 +100,7 @@ namespace Resume.Infrastructure.Migrations
                 {
                     ResumeId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     Url = table.Column<string>(type: "nvarchar(300)", maxLength: 300, nullable: false),
-                    Title = table.Column<string>(type: "nvarchar(150)", maxLength: 150, nullable: false),
-                    ResumeId1 = table.Column<Guid>(type: "uniqueidentifier", nullable: false)
+                    Title = table.Column<string>(type: "nvarchar(150)", maxLength: 150, nullable: false)
                 },
                 constraints: table =>
                 {
@@ -116,12 +108,6 @@ namespace Resume.Infrastructure.Migrations
                     table.ForeignKey(
                         name: "FK_Links_Resumes_ResumeId",
                         column: x => x.ResumeId,
-                        principalTable: "Resumes",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_Links_Resumes_ResumeId1",
-                        column: x => x.ResumeId1,
                         principalTable: "Resumes",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
@@ -179,16 +165,6 @@ namespace Resume.Infrastructure.Migrations
                 name: "IX_Experiences_ResumeId",
                 table: "Experiences",
                 column: "ResumeId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Languages_ResumeId1",
-                table: "Languages",
-                column: "ResumeId1");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Links_ResumeId1",
-                table: "Links",
-                column: "ResumeId1");
 
             migrationBuilder.CreateIndex(
                 name: "IX_References_ResumeId",

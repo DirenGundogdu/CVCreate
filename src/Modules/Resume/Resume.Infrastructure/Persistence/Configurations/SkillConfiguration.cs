@@ -16,7 +16,5 @@ public class SkillConfiguration : IEntityTypeConfiguration<Skill>
         builder.Property(x => x.Name).IsRequired().HasMaxLength(100);
 
         builder.Property(x => x.Level).IsRequired().HasMaxLength(50);
-
-        builder.HasOne(x => x.Resume).WithMany(x => x.Skills).HasForeignKey(x => x.ResumeId).OnDelete(DeleteBehavior.Cascade);
     }
 }

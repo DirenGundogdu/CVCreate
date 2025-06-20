@@ -5,8 +5,6 @@ namespace Resume.Domain.Entities;
 public class Skill : ValueObject
 {
     public Guid ResumeId { get; private set; }
-    public Resume Resume { get; private set; }
-    
     public string Name { get; private set; }
     public string Level { get; private set; }
     
